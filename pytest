@@ -1,0 +1,13 @@
+pytest is python based testing framework
+write and execute test code 
+detect test file and test function automatically 
+pip - package installer for python (it will install or uninstall packages related to python )
+python version - 
+pip install pytest 
+test case has to start with test* 
+Assertions and different syntaxes
+selenium with python
+markers - @mark.skip , with conditions ,multiple markers , pytest - m "not smoke" ,  pytest - m "not product or smoke" , pytest - m "not product and smoke" 
+ 
+fixtures - before and after each test cases - avoid repetitiion , which are common for all cases 
+
