@@ -1,1 +1,49 @@
+Classes - https://www.udacity.com/blog/2021/11/__init__-in-python-an-overview.html#:~:text=The%20__init__%20method%20is%20the%20Python%20equivalent%20of,is%20only%20used%20within%20classes.
 
+class Dog:                
+ 
+def __init__(self, dogBreed,dogEyeColor): 
+  
+    self.breed = dogBreed   
+    self.eyeColor = dogEyeColor
+ 
+tomita = Dog("Fox Terrier","brown")
+ 
+print("This dog is a",tomita.breed,"and his eyes are",tomita.eyeColor)
+
+
+class Dog:  
+ 
+def __init__(self):
+    self.nbLegs = 4
+ 
+tomita = Dog()
+print("This dog has",tomita.nbLegs,"legs")
+
+
+class Dog:                
+ 
+def __init__(self, dogBreed="German Shepherd",dogEyeColor="brown"): 
+  
+    self.breed = dogBreed   
+    self.eyeColor = dogEyeColor
+ 
+tomita = Dog()
+ 
+print("This dog is a",tomita.breed,"and his eyes are",tomita.eyeColor)
+
+
+from parent import Animal
+
+
+# Animal is parent class - u can use those methods, by directly calling # but with self 
+class Dog():
+    def __init__(self,name,action):
+        self.name=name
+        self.action=action
+        self.notdeclared = "declared"
+        
+    
+    def employeename(self):
+        print("hello i am animal" + " " + self.name)
+        Animal.myname(self,"camel")
